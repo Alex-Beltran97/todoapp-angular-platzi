@@ -1,0 +1,53 @@
+<header>
+  <h1 class="title">My Day</h1>
+  <p class="title-description">All my tasks in one place</p>
+  <form id="form" class="form">
+    <input
+      type="text"
+      name="tasks"
+      id="tasks"
+      placeholder="Type your new task here..."
+    />
+  </form>
+</header>
+<main>
+  <section>
+    <article class="tasks-list">
+      <ul>
+        <li class="task">
+          <input type="radio" id="task1" name="task1" />
+          <label for="task1">Install Angular/CLI</label>
+        </li>
+        <li class="task">
+          <input type="radio" id="task2" name="task2" />
+          <label for="task2">Create a project</label>
+        </li>
+        <li class="task">
+          <input type="radio" id="task3" name="task3" />
+          <label for="task3">Create components</label>
+        </li>
+        <li class="task">
+          <input type="radio" id="task4" name="task4" />
+          <label for="task4">Create a service</label>
+        </li>
+      </ul>
+    </article>
+    <article class="homeworks-bar">
+      <p class="tasks-counter">0 item left</p>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <button>All</button>
+          </li>
+          <li>
+            <button>Pending</button>
+          </li>
+          <li>
+            <button>Completed</button>
+          </li>
+        </ul>
+      </nav>
+      <button class="clear-tasks-btn">Clear completed</button>
+    </article>
+  </section>
+</main>

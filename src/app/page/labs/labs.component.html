@@ -1,0 +1,42 @@
+<h1>{{ title }}</h1>
+<hr />
+<ol>
+  <li *ngFor="let task of tasks()">{{ task }}</li>
+</ol>
+<hr />
+<img
+  [src]="person.avatar.img"
+  [alt]="person.avatar.name"
+  width="250px"
+/>
+<p>Name: {{ person.name() }} | Last Name: {{ person.lastName() }}</p>
+<form (submit)="handleSubmit($event)">
+  <div>
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [value]="person.name()"
+      (change)="handleChangeName($event)"
+    />
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input
+      type="text"
+      id="lastName"
+      name="lastName"
+      [value]="person.lastName()"
+      (keydown.arrowDown)="handleKeydown($event)"
+      (change)="handleChangeLastName($event)"
+    />
+  </div>
+  <button [disabled]="person.disabled()" type="submit">Show</button>
+</form>
+<p (dblclick)="handleDoubleClick()">Click me twice</p>
+<hr />
+<ul>
+  <p>Total: {{ tasks().length }} </p>
+  <li *ngFor="let task of tasks(); index as i">{{ i + 1 }}. {{ task }}</li>
+</ul>

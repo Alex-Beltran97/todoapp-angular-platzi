@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  margin: .5rem 1rem;
+  font-size: 16px;
+}
+
+header {
+  font-size: .8rem;
+}
+
+.form input {
+  width: 100%;
+  margin: .5rem 0;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: .025rem;
+}
+
+.homeworks-bar, button {
+  font-size: .6rem;
+}
+
+.homeworks-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .5rem;
+}
+
+.homeworks-bar .nav-bar ul {
+  display: flex;
+  gap: .25rem;
+}
